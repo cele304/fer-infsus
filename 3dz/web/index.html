@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upravljanje kinima</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Smooth scrolling for anchor links
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+
+            // Change button styles on hover
+            $('.myButton').hover(
+                function() {
+                    $(this).css('background-color', '#333');
+                },
+                function() {
+                    $(this).css('background-color', ''); // Revert to default background color
+                }
+            );
+        });
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Dobrodošli u naša kina</h1>
+</header>
+
+<section class="seccion">
+    <p>
+        Istraži svijet s našom mrežom Premium kina! Nudimo ti neprocjenjivo kinematografsko iskustvo!
+        
+        
+    </p>
+
+    <div class="buttons-container">
+        <button class="myButton" onclick="location.href='./registration.jsp'">Registracija</button>
+        <button class="myButton" onclick="location.href='./login.jsp'">Prijava</button>
+    </div>
+
+    <br>
+    
+    <p>
+        U našim kinima možeš istražiti naš katalog, potražiti dostupna kina, kupiti ulaznice i ostaviti svoje mišljenje o pregledanim filmovima.
+        
+     
+        
+    </p>
+</section>
+    <section class="seccion">
+    <center>
+
+    <h3>Što želiš vidjeti?</h3>
+    
+        <br>
+        <!-- Poveznica na pregled filmova po teatru -->
+        <a href="user_viewFilmNeregistrirani.jsp" class="myButton">Vidi filmove</a><br>
+       <br>
+        <!-- Poveznica na pregled kina -->
+        <a href="user_viewCities.jsp" class="myButton">Vidi kina i gradove</a><br>
+        <br>
+ 
+        <br>
+      
+        
+        <p> Registriraj se kako bi kupio ulaznice i ostavio komentar!
+    </center>
+        
+    </section>
+    
+   
+
+
+<footer>
+    <p>&copy; 2024 Cinema Management. All rights reserved.</p>
+</footer>
+    
+</body>
+</html>

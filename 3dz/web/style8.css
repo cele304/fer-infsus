@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: black; /* Ensure text color is black */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+font.error {
+    color: red;
+}
+
+p.back-link {
+    margin-top: 20px;
+}
+
+.back-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.back-link a:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Additional styles for the header and button */
+header {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; /* Center content vertically */
+}
+
+.header-content p {
+    margin: 0;
+}
+
+.header-content a {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px; /* Add margin for better spacing */
+}
+
+.header-content a:hover {
+    background-color: #45a049;
+}
+
+.header-table-container {
+    margin: 0 auto; /* Center the table */
+    max-width: 600px; /* Set a maximum width for the table */
+    width: 100%;
+}
+
+.header-table {
+    width: 100%;
+    background-color: black;
+    border-collapse: collapse;
+    margin-top: 10px;
+    color: black; /* Ensure text color is black */
+}
+
+.header-table th, .header-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color: black; /* Ensure text color is black */
+}
+
+.header-table th {
+    background-color: #4CAF50;
+    color: black;
+}
+
+.content {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.novo-boja {
+    color: black;
+}
